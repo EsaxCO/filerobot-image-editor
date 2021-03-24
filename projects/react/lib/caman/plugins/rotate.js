@@ -27,8 +27,8 @@ Caman.Plugin.register("rotate", function (degrees) {
     let sinAngle = Math.sin(toDegrees(Math.abs(angle)));
     let cosAngle = Math.cos(toDegrees(Math.abs(angle)));
 
-    width = Math.abs(Math.abs(this.canvas.height * sinAngle) - Math.abs(this.canvas.width * cosAngle));
-    height = Math.abs(Math.abs(this.canvas.height * cosAngle) - Math.abs(this.canvas.width * sinAngle));
+    height = this.canvas.height;
+    width = this.canvas.width;
 
     x = width / 2;
     y = height / 2;
